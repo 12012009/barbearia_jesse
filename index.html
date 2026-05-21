@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia Jessé</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23e0a43a' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z'/%3E%3Cpath d='M5 21h14'/%3E%3C/svg%3E" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="preloader" class="preloader">
+        <div class="preloader-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <svg class="lucide lucide-crown" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#e0a43a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z" />
+                    <path d="M5 21h14" />
+                </svg>
+                <span class="logo-text">Barbearia <span class="logo-highlight">Jessé</span></span>
+            </div>
+
+            <div class="nav-actions">
+                <div class="nav-links">
+                    <a href="#sobre" class="nav-link">Sobre</a>
+                    <a href="#servicos" class="nav-link">Serviços</a>
+                    <a href="#depoimentos" class="nav-link">Depoimentos</a>
+                    <a href="#contato" class="nav-link">Contato</a>
+                </div>
+
+                <a href="#agendamento" class="btn-agendar">Agendar</a>
+
+                <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" type="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="mobile-menu" aria-hidden="true">
+            <div class="mobile-menu-links">
+                <a href="#sobre" class="nav-link">Sobre</a>
+                <a href="#servicos" class="nav-link">Serviços</a>
+                <a href="#depoimentos" class="nav-link">Depoimentos</a>
+                <a href="#contato" class="nav-link">Contato</a>
+                <a href="#agendamento" class="btn-agendar mobile">Agendar</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Seu estilo<br><span class="highlight">começa aqui.</span></h1>
+            <p>Cortes precisos, barba alinhada e experiência moderna.</p>
+            <div class="hero-buttons">
+                <button class="btn-primary" id="btn-agendar-hero">Agendar Horário</button>
+                <a href="#servicos" class="btn-secondary">Conhecer Serviços</a>
+            </div>
+        </div>
+        <div class="hero-background"></div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="sobre">
+        <div class="sobre-header">
+            <span class="section-label">SOBRE A BARBEARIA JESSÉ</span>
+            <h2>Tradição e <span class="highlight">modernidade</span> em cada corte.</h2>
+            <p>Há anos, Jessé transforma autoestima e estilo através de cortes modernos, técnica apurada e atendimento diferenciado. Unindo experiência, personalidade e um ambiente acolhedor, cada detalhe é pensado para oferecer muito mais que um simples corte.</p>
+        </div>
+
+        <div class="sobre-features">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg class="lucide lucide-badge-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#e0a43a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                        <path d="m9 12 2 2 4-4" />
+                    </svg>
+                </div>
+                <h3>Atendimento Impecável</h3>
+                <p>Cortes precisos, barba alinhada e acabamento impecável com experiência moderna.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg class="lucide lucide-award" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#e0a43a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526" />
+                        <circle cx="12" cy="8" r="6" />
+                    </svg>
+                </div>
+                <h3>Profissional Experiente</h3>
+                <p>Expertise em técnicas modernas para cortes precisos e cheios de estilo.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg class="lucide lucide-palette" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#e0a43a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z" />
+                        <circle cx="13.5" cy="6.5" r=".5" fill="#e0a43a" />
+                        <circle cx="17.5" cy="10.5" r=".5" fill="#e0a43a" />
+                        <circle cx="6.5" cy="12.5" r=".5" fill="#e0a43a" />
+                        <circle cx="8.5" cy="7.5" r=".5" fill="#e0a43a" />
+                    </svg>
+                </div>
+                <h3>Ambiente Sofisticado</h3>
+                <p>Simples, confortável e acolhedor para você se sentir à vontade.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg class="lucide lucide-users" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#e0a43a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                        <path d="M16 3.128a4 4 0 0 1 0 7.744" />
+                        <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                        <circle cx="9" cy="7" r="4" />
+                    </svg>
+                </div>
+                <h3>Produtos de Alta Qualidade</h3>
+                <p>Produtos de qualidade para o melhor cuidado com cabelo e barba.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços Section -->
+    <section id="servicos" class="servicos">
+        <div class="servicos-header">
+            <span class="section-label">SERVIÇOS</span>
+            <h2>Excelência em <span class="highlight">cada serviço</span></h2>
+            <p>Do corte tradicional ao visual mais moderno — tudo feito do jeito que combina com você.</p>
+        </div>
+
+        <div class="servicos-grid">
+            <!-- Corte Masculino -->
+            <div class="servico-card">
+                <div class="servico-icon">
+                    <svg class="lucide lucide-scissors" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#e0a43a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="6" cy="6" r="3" />
+                        <path d="M8.12 8.12 12 12" />
+                        <path d="M20 4 8.12 15.88" />
+                        <circle cx="6" cy="18" r="3" />
+                        <path d="M14.8 14.8 20 20" />
+                    </svg>
+                </div>
+                <h3>Corte Masculino</h3>
+                <p>Corte desenhado conforme seu estilo e tipo de cabelo, com acabamento limpo e bem alinhado.</p>
+                <div class="servico-preco">
+                    <span class="label">A PARTIR DE</span>
+                    <span class="preco">R$ 30</span>
+                </div>
+                <a href="#agendamento" class="link-agendar">Agendar →</a>
+            </div>
+
+            <!-- Combo Completo -->
+            <div class="servico-card">
+                <div class="servico-icon">
+                    <svg class="lucide lucide-badge-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#e0a43a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                        <path d="m9 12 2 2 4-4" />
+                    </svg>
+                </div>
+                <h3>Combo Completo</h3>
+                <p>Corte + Barba + Sobrancelha: visual completo e harmonizado em uma única sessão.</p>
+                <div class="servico-preco">
+                    <span class="label">A PARTIR DE</span>
+                    <span class="preco">R$ 50</span>
+                </div>
+                <a href="#agendamento" class="link-agendar">Agendar →</a>
+            </div>
+
+            <!-- Escova -->
+            <div class="servico-card">
+                <div class="servico-icon">
+                    <svg class="lucide lucide-wind" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#e0a43a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12.8 19.6A2 2 0 1 0 14 16H2" />
+                        <path d="M17.5 8a2.5 2.5 0 1 1 2 4H2" />
+                        <path d="M9.8 4.4A2 2 0 1 1 11 8H2" />
+                    </svg>
+                </div>
+                <h3>Escova</h3>
+                <p>Escova e alinhamento dos fios para deixar o cabelo mais organizado, estiloso e com ótimo acabamento.</p>
+                <div class="servico-preco">
+                    <span class="label">A PARTIR DE</span>
+                    <span class="preco">R$ 50</span>
+                </div>
+                <a href="#agendamento" class="link-agendar">Agendar →</a>
+            </div>
+
+            <!-- Escova com Hidratação -->
+            <div class="servico-card">
+                <div class="servico-icon">
+                    <svg class="lucide lucide-droplet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#e0a43a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z" />
+                    </svg>
+                </div>
+                <h3>Escova com Hidratação</h3>
+                <p>Escova + tratamento hidratante intenso para cabelos ressecados e danificados.</p>
+                <div class="servico-preco">
+                    <span class="label">A PARTIR DE</span>
+                    <span class="preco">R$ 80</span>
+                </div>
+                <a href="#agendamento" class="link-agendar">Agendar →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agendamento Section -->
+    <section id="agendamento" class="agendamento">
+        <div class="agendamento-content">
+            <div class="agendamento-text">
+                <span class="section-label">AGENDAMENTO</span>
+                <h2>Reserve seu <span class="highlight">horário</span><br>agora.</h2>
+                
+                <div class="info-list">
+                    <div class="info-item"><span class="info-icon"><svg class="lucide lucide-clock" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#e0a43a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" /></svg></span><span class="info-text">Seg-Sáb: 8h às 20h / Dom e Feriados: 7h às 14h</span></div>
+                    <div class="info-item"><span class="info-icon"><svg class="lucide lucide-phone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#e0a43a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg></span><span class="info-text">+55 11 96352-1713</span></div>
+                    <div class="info-item"><span class="info-icon"><svg class="lucide lucide-map-pin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#e0a43a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></svg></span><span class="info-text">396 Av. Taquandava — Cidade Ipava, São Paulo</span></div>
+                </div>
+            </div>
+
+            <div class="agendamento-right">
+                <form class="agendamento-form">
+                    <div id="agendamento-aviso" style="display:none;color:#d32f2f;font-weight:600;margin-bottom:1rem;text-align:center"></div>
+                    <div class="form-group">
+                        <label>SEU NOME</label>
+                        <input type="text" placeholder="Nome completo" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>SERVIÇO</label>
+                        <select required onchange="this.blur()">
+                            <option>Corte Masculino</option>
+                            <option>Combo Completo</option>
+                            <option>Escova</option>
+                            <option>Escova com Hidratação</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>DATA</label>
+                            <input type="date" placeholder="dd/mm/aaaa" required id="agendamento-data">
+                        </div>
+                        <div class="form-group">
+                            <label>HORÁRIO</label>
+                            <input type="time" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Confirmar via WhatsApp</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos Section -->
+    <section id="depoimentos" class="depoimentos">
+        <div class="depoimentos-header">
+            <span class="section-label">DEPOIMENTOS</span>
+            <h2>O que dizem <span class="highlight">nossos clientes</span></h2>
+        </div>
+
+        <div class="depoimentos-grid">
+            <div class="depoimento-card">
+                <div class="stars">★★★★★</div>
+                <p>"Fiz corte à barba em um horário ao fim da tarde e fui atendido sem atraso. O barbeiro entendeu bem o que eu queria e apurou detalhes na hora."</p>
+                <span class="depoimento-author">Pedro Almeida</span>
+            </div>
+
+            <div class="depoimento-card">
+                <div class="stars">★★★★★</div>
+                <p>"Levo meu filho aqui de vez em quando o atendimento sempre é tranquilo. O ambiente é organizado, o resultado fico consistente e o agendamento funciona bem"</p>
+                <span class="depoimento-author">Bruno Costa</span>
+            </div>
+
+            <div class="depoimento-card">
+                <div class="stars">★★★★★</div>
+                <p>"Gostei do capricho no alinhamento e da atenção no corte. Também achei prático conseguir encaixar um horário antes do trabalho."</p>
+                <span class="depoimento-author">Felipe Santos</span>
+            </div>
+
+            <div class="depoimento-card">
+                <div class="stars">★★★★★</div>
+                <p>"A experiência foi direta e sem exagero: atendimento educado, boa conversa e um corte que saiu exatamente como eu pedi."</p>
+                <span class="depoimento-author">Ricardo Lima</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="contato">
+        <div class="contato-header">
+            <span class="section-label">CONTATO</span>
+            <h2>Venha nos <span class="highlight">visitar</span></h2>
+        </div>
+
+        <div class="contato-content">
+            <div class="mapa-container">
+                <iframe id="contato-mapa" src="https://maps.google.com/maps?q=396%20Av.%20Taquandava%20Cidade%20Ipava%20São%20Paulo&output=embed" width="100%" height="360" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="contato-cards">
+                <div class="contato-card">
+                    <div class="contato-card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#e0a43a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    </div>
+                    <div class="contato-card-body">
+                        <h4>Telefone</h4>
+                        <a href="https://wa.me/5511963521713" target="_blank" rel="noreferrer">+55 11 96352-1713</a>
+                    </div>
+                </div>
+
+                <div class="contato-card">
+                    <div class="contato-card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#e0a43a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <div class="contato-card-body">
+                        <h4>Localização</h4>
+                        <a href="https://maps.google.com/maps?q=396+Av.+Taquandava+Cidade+Ipava+São+Paulo" target="_blank" rel="noreferrer">396 Av. Taquandava — Cidade Ipava</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <svg class="lucide lucide-crown" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#e0a43a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z" />
+                        <path d="M5 21h14" />
+                    </svg>
+                    <span>Barbearia Jessé</span>
+                </div>
+                <p>Cortes precisos, atendimento acolhedor e um espaço pensado para quem cuida do estilo.</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>NAVEGAÇÃO</h4>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#agendamento">Agendamento</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>CONTATO</h4>
+                <ul>
+                    <li><a href="https://wa.me/5511963521713" target="_blank" rel="noreferrer">+55 11 96352-1713</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year">2026</span> Barbearia Jessé. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
