@@ -963,4 +963,7 @@ input::placeholder {
         width: 42px;
         height: 42px;
     }
+    .btn-submit {
+    border: none !important;
+}
 }
